@@ -1,3 +1,3 @@
 # Paws
 
-Paws just provide some helper functions.
+Paws provides some helper func for gopher's developing experience.
