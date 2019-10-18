@@ -1,4 +1,4 @@
-// Package paws provides some helper func for gopher's developing experience.
+// Package paws provides some helper functions for gopher's developing experience.
 package paws
 
 // String returns a new pointer of given s string.
