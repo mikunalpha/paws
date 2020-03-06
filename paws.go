@@ -42,7 +42,7 @@ func Int8(i int8) *int8 { return &i }
 
 // MustInt8 returns int value of pointer p, if p is not nil.
 // i is returned, if  p is nil.
-func MustInt8(p *int, i int) int {
+func MustInt8(p *int8, i int8) int8 {
 	if p != nil {
 		return *p
 	}
@@ -54,7 +54,7 @@ func Int16(i int16) *int16 { return &i }
 
 // MustInt16 returns a int value of pointer p, if p is not nil.
 // i is returned, if  p is nil.
-func MustInt16(p *int, i int) int {
+func MustInt16(p *int16, i int16) int16 {
 	if p != nil {
 		return *p
 	}
@@ -66,7 +66,7 @@ func Int32(i int32) *int32 { return &i }
 
 // MustInt32 returns a int value of pointer p, if p is not nil.
 // i is returned, if  p is nil.
-func MustInt32(p *int, i int) int {
+func MustInt32(p *int32, i int32) int32 {
 	if p != nil {
 		return *p
 	}
@@ -78,7 +78,7 @@ func Int64(i int64) *int64 { return &i }
 
 // MustInt64 returns a int value of pointer p, if p is not nil.
 // i is returned, if  p is nil.
-func MustInt64(p *int, i int) int {
+func MustInt64(p *int64, i int64) int64 {
 	if p != nil {
 		return *p
 	}
