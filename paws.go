@@ -1,6 +1,8 @@
 // Package paws provides some helper functions for gopher's developing experience.
 package paws
 
+import "time"
+
 // String returns a new pointer of given s string.
 func String(s string) *string { return &s }
 
@@ -167,4 +169,16 @@ func MustFloat64(p *float64, f float64) float64 {
 		return *p
 	}
 	return f
+}
+
+// Time returns a new pointer of given i time.Time.
+func Time(t time.Time) *time.Time { return &t }
+
+// MustTime returns a time.Time value of pointer p, if p is not nil.
+// t is returned, if  p is nil.
+func MustTime(p *time.Time, t time.Time) time.Time {
+	if p != nil {
+		return *p
+	}
+	return t
 }
